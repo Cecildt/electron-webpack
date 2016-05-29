@@ -1,0 +1,34 @@
+{
+  "name": "electron-webpack",
+  "version": "1.0.0",
+  "description": "Electron application using webpack. Used to test latest version releases of Electron and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "typings install",
+    "start": "electron main.js",
+    "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cecildt/electron-webpack.git"
+  },
+  "author": "Cecil du Toit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cecildt/electron-webpack/issues"
+  },
+  "homepage": "https://github.com/Cecildt/electron-webpack#readme",
+  "devDependencies": {
+    "devtron": "^1.1.2",
+    "electron-debug": "^1.0.0",
+    "electron-prebuilt": "^1.2.0",
+    "electron-reload": "^1.0.0",
+    "json-loader": "^0.5.4",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4",
+    "webpack": "^1.13.1"
+  }
+}
