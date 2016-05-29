@@ -9,10 +9,7 @@
         "noImplicitAny": false
     },
     "exclude": [
-        "node_modules",
-        "typings/main",
-        "typings/main.d.ts",
-        "releases"
+        "node_modules"
     ],
     "filesGlob": [
     "./src/customDefinitions.d.ts",

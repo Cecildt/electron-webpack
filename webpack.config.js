@@ -19,7 +19,8 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['','.ts','.js','.json', '.css', '.html']
+    extensions: ['','.ts','.js','.json', '.css', '.html'],
+    modulesDirectories: ['node_modules']
   },
 
   module: {
