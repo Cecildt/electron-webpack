@@ -5,7 +5,6 @@
     "raw": "registry:npm/webpack#1.12.9+20160418172948",
     "main": "index.d.ts",
     "browser": "index.d.ts",
-    "global": false,
     "name": "webpack",
     "type": "typings"
   }

@@ -4,6 +4,7 @@ const electron = require('electron');
 const app = electron.app;
 const ipc = require('electron').ipcMain
 const remote = require('electron').remote;
+const ipcMain = electron.ipcMain;
 
 require('electron-debug')({showDevTools: true});
 
@@ -22,7 +23,7 @@ function createWindow() {
     height: 900,
     autoHideMenuBar: true,
     webPreferences: {
-      nodeIntegration: false
+      //nodeIntegration: false
     }
   });
 
@@ -55,4 +56,10 @@ app.on('activate', function () {
   if (mainWindow === null) {
     createWindow();
   }
+});
+
+
+ipcMain.on('asynchronous-message', function(event, arg) {
+  console.log('ipc.async', arg);
+  event.sender.send('asynchronous-reply', 'async-pong');
 });

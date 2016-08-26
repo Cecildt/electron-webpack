@@ -47,6 +47,9 @@
 	"use strict";
 	var electron_1 = __webpack_require__(1);
 	electron_1.ipcRenderer.send('asynchronous-message', 'ping');
+	electron_1.ipcRenderer.on('asynchronous-reply', function (event, arg) {
+	    console.log('ipc.async response:', arg);
+	});
 
 
 /***/ },
